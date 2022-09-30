@@ -33,7 +33,7 @@ const db = {
 };
 
 const server = jsonServer.create();
-const router = jsonServer.router(db);
+const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
 const PORT = 3000;

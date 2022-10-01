@@ -3,22 +3,22 @@ const jsonServer = require('json-server');
 const db = {
     garage: [
         {
-            "name": "Tesla",
+            "name": "Scary Larry",
             "color": "#e6e6fa",
             "id": 1,
         },
         {
-            "name": "BMW",
+            "name": "Speedy Gonzalez",
             "color": "#fede00",
             "id": 2,
         },
         {
-            "name": "Mersedes",
+            "name": "Nerdy Willy",
             "color": "#6c779f",
             "id": 3,
         },
         {
-            "name": "Ford",
+            "name": "Catchy Stanley",
             "color": "#ef3c40",
             "id": 4,
         },
@@ -33,7 +33,7 @@ const db = {
 };
 
 const server = jsonServer.create();
-const router = jsonServer.router('db.json');
+const router = jsonServer.router(db);
 const middlewares = jsonServer.defaults();
 
 // const PORT = 3000;
